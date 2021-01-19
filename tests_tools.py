@@ -29,8 +29,7 @@ class QuickToolsTester(unittest.TestCase):
 
     # pas le bon nommage
     self.assertFalse(verify_room_type('priv')) 
-    self.assertFalse(verify_room_type('pub'))
-    self.assertFalse(verify_room_type('pubpiv'))  
+    self.assertFalse(verify_room_type('pub'))  
 
     ############### ASSERT TRUE ###############
 
