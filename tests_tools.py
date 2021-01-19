@@ -29,13 +29,15 @@ class QuickToolsTester(unittest.TestCase):
 
     # pas le bon nommage
     self.assertFalse(verify_room_type('priv')) 
-    self.assertFalse(verify_room_type('pub')) 
+    self.assertFalse(verify_room_type('pub'))
+    self.assertFalse(verify_room_type('pubpiv'))  
 
     ############### ASSERT TRUE ###############
 
     # reponse correcte
     self.assertTrue(verify_room_type('public'))
     self.assertTrue(verify_room_type('private'))
+
 
   def test_verify_user_password(self):
 
